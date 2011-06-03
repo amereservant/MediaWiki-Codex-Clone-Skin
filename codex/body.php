@@ -89,7 +89,7 @@
 		if ( count( $validFooterLinks ) > 0 ) { ?>
 		<p>
         <?php
-        $i = 0;
+        $i = 1;
         $c = count($validFooterLinks);
 		foreach( $validFooterLinks as $aLink )
 		{
