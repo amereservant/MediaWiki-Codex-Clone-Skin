@@ -1,0 +1,32 @@
+h1. Mediawiki WordPress.org Codex Skin clone
+
+p. This is a MediaWiki skin that clones the "WordPress.org Codex":http://wordpress.org/ theme.
+*ALL* credit is due to the theme authors of the WordPress.org Codex since it's their work 
+and I just made into a public Mediawiki skin.
+
+p. As far as I can tell, the theme falls under the same "GPL Licensing":http://codex.wordpress.org
+as the rest of the Codex content.
+If I am wrong about this, please let me know so I can honor it.
+
+h2. About The Codex Skin
+
+p. I ported the skin for a personal project I am working on and needed a localhost MediaWiki.
+Since I spend a ton of time sifting through and making contributions where I can to the *WordPress.org Codex*, 
+I thought it would be much easier if my localhost wiki looked like the WordPress Codex 
+since it's a format I'm familiar with viewing.
+
+p. While I was at it and since I had no luck finding a **WordPress Codex Skin Clone**, 
+I figured I'd share what I had come up with with the rest of those out there who just 
+love the familiar look of the Codex.
+So here you have it, the *Codex Skin clone*.
+
+h2. Feedback
+
+p. Issue tracking on GitHub is by far the easiest way to make suggestions and report problems 
+since it allows me to check items off and keep things organized.
+This is my first MediaWiki Skin, so I heavily-altered the *MonoBook* skin which provided the
+base example code to work with and then I cleaned the code up while integrating the Codex design.
+With that being said, there's bound to be issues such as things I missed, things I may have gotten wrong, 
+or perhaps there's better practices that those who are much more savvy at Skinning Mediawiki than I am know of.
+
+p. This was a quick project and therefore your feedback is important in getting these things ironed out.
