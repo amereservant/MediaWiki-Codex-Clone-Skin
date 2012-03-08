@@ -61,12 +61,7 @@ class CodexTemplate extends QuickTemplate
     * @var      string
     * @access   private
     */
-	private $_sideboxf = <<<________EOD
-	    <h3>%s</h3>
-	    <ul class="submenu">
-	        %s
-	    </ul>
-________EOD;
+	private $_sideboxf = '<h3>%s</h3><ul class="submenu">%s</ul>';
 
    /**
     * Sidebox List Item printf Format
@@ -74,7 +69,7 @@ ________EOD;
     * @var      string
     * @access   private
     */
-    private $_lif = "\t<li id=\"%s\"%s>%s</li>\n";
+    private $_lif = 't<li id="%s"%s>%s</li>'."\n";
 
    /**
     * Sidebox AnchorLink printf Format
