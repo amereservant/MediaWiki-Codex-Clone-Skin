@@ -69,7 +69,7 @@ class CodexTemplate extends QuickTemplate
     * @var      string
     * @access   private
     */
-    private $_lif = 't<li id="%s"%s>%s</li>'."\n";
+    private $_lif = '<li id="%s"%s>%s</li>';
 
    /**
     * Sidebox AnchorLink printf Format
