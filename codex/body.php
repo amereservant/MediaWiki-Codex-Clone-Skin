@@ -29,7 +29,7 @@
 		    <?php foreach($this->data['personal_urls'] as $key => $item) {
 		        $linkf = '<a href="%s" class="%s" %s>%s</a>';
 		        $class = $item['class'] .' '. ($item['active'] ? 'active':'');
-		        printf( $linkf, htmlspecialchars($item['href']), $class, $skin->tooltipAndAccesskey('pt-'.$key), htmlspecialchars($item['text']) );
+		        printf( $linkf, htmlspecialchars($item['href']), $class, $skin->tooltipAndAccesskeyAttribs('pt-'.$key), htmlspecialchars($item['text']) );
 		    } ?>
 		    </p>
 	    </div>

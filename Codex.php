@@ -149,7 +149,7 @@ class CodexTemplate extends QuickTemplate
 				    'onblur'    => "this.value=(this.value=='') ? 'Search the Codex' : this.value;",
 			    )
             ),
-            $this->skin->tooltipAndAccesskey( 'search-go' )
+            $this->skin->tooltipAndAccesskeyAttribs( 'search-go' )
         );
 	}
 
@@ -172,7 +172,7 @@ class CodexTemplate extends QuickTemplate
 			    't-whatlinkshere', 
 			    '', 
 			    sprintf( $this->_af, htmlspecialchars($this->data['nav_urls']['whatlinkshere']['href']), 
-			             $this->skin->tooltipAndAccesskey('t-whatlinkshere'), 
+			             $this->skin->tooltipAndAccesskeyAttribs('t-whatlinkshere'), 
 			             htmlspecialchars( $this->translator->translate('whatlinkshere') ) )
 			);
 		
@@ -184,7 +184,7 @@ class CodexTemplate extends QuickTemplate
 			    $alinks .= sprintf( $this->_af, 
 			        htmlspecialchars($feed['href']),
 			        'id="'. Sanitizer::escapeId( "feed-$key" ) .'" rel="alternate" type="application/'. $key .'+xml" class="feedlink" '.
-			        $this->skin->tooltipAndAccesskey('feed-'.$key),
+			        $this->skin->tooltipAndAccesskeyAttribs('feed-'.$key),
 			        htmlspecialchars($feed['text']) .'&nbsp' );
 		    }
 		    
@@ -199,7 +199,7 @@ class CodexTemplate extends QuickTemplate
 		            '',
 		            sprintf( $this->_af,
 		                htmlspecialchars($this->data['nav_urls'][$special]['href']),
-		                $this->skin->tooltipAndAccesskey('t-'. $special),
+		                $this->skin->tooltipAndAccesskeyAttribs('t-'. $special),
 		                htmlspecialchars( $this->translator->translate($special) ) )
 		        );
 	    }
@@ -210,7 +210,7 @@ class CodexTemplate extends QuickTemplate
 		        '',
 		        sprintf( $this->_af,
 		            htmlspecialchars($this->data['nav_urls']['print']['href']),
-			        'rel="alternate" '. $this->skin->tooltipAndAccesskey('t-print'),
+			        'rel="alternate" '. $this->skin->tooltipAndAccesskeyAttribs('t-print'),
 			        htmlspecialchars( $this->translator->translate('printableversion') ) )
 		    );
 	    
@@ -220,7 +220,7 @@ class CodexTemplate extends QuickTemplate
 			    '',
 			    sprintf( $this->_af,
 			        htmlspecialchars($this->data['nav_urls']['permalink']['href']),
-			        $this->skin->tooltipAndAccesskey('t-permalink'),
+			        $this->skin->tooltipAndAccesskeyAttribs('t-permalink'),
 			        htmlspecialchars( $this->translator->translate('permalink') ) )
 			);
 	    
@@ -257,7 +257,7 @@ class CodexTemplate extends QuickTemplate
 			$href   = htmlspecialchars($tab['href']);
 			$tool   = in_array( $action, array('edit', 'submit') ) && 
 			          in_array( $key, array('edit', 'watch', 'unwatch') ) ? 
-			          $this->skin->tooltip( "ca-$key" ) : $this->skin->tooltipAndAccesskey( "ca-$key" );
+			          $this->skin->tooltip( "ca-$key" ) : $this->skin->tooltipAndAccesskeyAttribs( "ca-$key" );
 			$text   = htmlspecialchars($tab['text']);
 			
 			$alink  = sprintf($this->_af, $href, $tool, $text);
@@ -323,7 +323,7 @@ class CodexTemplate extends QuickTemplate
 				    ($val['active'] ? ' class="active"':''),
 				    sprintf( $this->_af,
 				        htmlspecialchars($val['href']),
-				        $this->skin->tooltipAndAccesskey($val['id']),
+				        $this->skin->tooltipAndAccesskeyAttribs($val['id']),
 				        htmlspecialchars( $this->translator->translate($val['text']) )
 				    )
 				);
